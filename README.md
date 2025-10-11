@@ -12,7 +12,7 @@ Dieses Repository enthält **Startcode und Aufgabenstellungen** für die Übunge
 Sie **bearbeiten keine Aufgaben direkt in diesem Repository**, sondern in Ihrem eigenen **Fork**.
 
 Weitere Hinweise zum Vorgehen erhalten Sie in der Veranstaltung und auf dem Übungsblatt im [Moodle-Kursraum](https://moodle.hsnr.de/course/view.php?id=11909).
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 Aufgabe 1: 
 
 Frage 1: Worin besteht der Unterschied zwischen einem Fork und einem Clone?
@@ -31,4 +31,7 @@ Aufgabe 2. Team Information und ersten Commit
 
 - Teamnamen: GitLab-Gruppe 15
 - Namen der Mitglieder: Finn Greiser, Kingkar Bhowmick
-------------------------------------------------------- „Wir testen unseren ersten Commit.“----------------------------------------------------------------
+
+
+
+------------------------------------------------------ „Wir testen unseren ersten Commit.“----------------------------------------------------------------
