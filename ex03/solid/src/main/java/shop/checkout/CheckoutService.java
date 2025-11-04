@@ -2,6 +2,8 @@ package shop.checkout;
 
 public class CheckoutService {
 
+
+    /*Wird geloescht*/
     public String checkout(Cart cart) {
         int subtotal = 0;
         for (CartItem it : cart.items()) {
@@ -25,3 +27,5 @@ public class CheckoutService {
         return String.format("%.2f €", c / 100.0);
     }
 }
+
+
