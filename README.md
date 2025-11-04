@@ -31,7 +31,7 @@ Antwort: Ein Fork ist eine Funktion in GitLab (oder GitHub), mit der man eine Ko
 Aufgabe 2. Team Information und ersten Commit
 
 * Teamnamen: GitLab-Gruppe 15
-* Namen der Mitglieder: Finn Greiser, Kingkar Bhowmick,Jordan - (:) lol
+* Namen der Mitglieder: Finn Greiser, Kingkar Bhowmick,Jordan - (:) lol ...
 
 
 
