@@ -14,6 +14,8 @@ class RecieptFormatter{
     logger.log(String.valueOf(total));
 
   return reciept;
+
+  
     }
 
 

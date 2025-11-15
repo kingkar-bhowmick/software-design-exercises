@@ -12,7 +12,7 @@ public class CheckoutService {
         PriceCalculator calculator = new PriceCalculator();
              
 
-    return calculator.checkout(cart);
+    return calculator.calulate(cart);
     }
 
 
