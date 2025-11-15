@@ -2,7 +2,7 @@ package shop.checkout;
 
  public class PriceCalculator{
 
-  public void checkout(Cart cart) {
+  public String checkout(Cart cart) {
   int subtotal = 0;
   for (CartItem it : cart.items()) {
   subtotal += it.unitPriceCents() * it.quantity();
@@ -13,7 +13,15 @@ package shop.checkout;
  
   
   RecieptFormatter formatter = new RecieptFormatter();
-  formatter.summary(subtotal,discount,tax,total);
+  
+
+  return formatter.summary(subtotal,discount,tax,total);
+
+
+
+
+
+
   }
   
 }

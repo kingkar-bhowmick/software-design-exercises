@@ -6,34 +6,20 @@ import java.util.ArrayList;
 public class CheckoutService {
 
 
-    /*Wird geloescht und entkoppelt*/
-    /*public String checkout(Cart cart) {
-        int subtotal = 0;
-        for (CartItem it : cart.items()) {
-            subtotal += it.unitPriceCents() * it.quantity();
-        }
-        int discount = (subtotal >= 10_000) ? (int) (subtotal * 0.10) : 0;
-        int tax = (int) ((subtotal - discount) * 0.19);
-        int total = subtotal - discount + tax;
+    
+    public String checkout(Cart cart) {
+         // Use the PriceCalculator to checkout the cart
+        PriceCalculator calculator = new PriceCalculator();
+             
 
-        String summary = "Subtotal: " + cents(subtotal) + ", " +
-                "Discount: " + cents(discount) + ", " +
-                "Tax: " + cents(tax) + ", " +
-                "Total: " + cents(total);
-
-        System.out.println("[LOGINFO] checkout total=" + total);
-
-        return summary;
+    return calculator.checkout(cart);
     }
 
-    private String cents(int c) {
-        return String.format("%.2f €", c / 100.0);*/
 
 
-
-        //Mock Test 
-
-    public static void main(String[] args) {
+}
+        /* 
+         * public static void main(String[] args) {
 
         //(String productCode, int unitPriceCents, int quantity)
         
@@ -57,6 +43,9 @@ ArrayList < CartItem > itemList = new ArrayList< CartItem >();
 
 
     }
+        */
+
+    
 
 
 
