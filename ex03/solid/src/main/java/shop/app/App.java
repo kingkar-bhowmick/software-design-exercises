@@ -32,7 +32,7 @@ public class App {
 
     private static void runInvoiceDemo() {
 
-        //Testen mit fake Implementierungen von InvoiceRenderer und Notifier
+        //Testen mit fake Implementierungen von InvoiceRenderer und Notifier und Inversion of Control (DIP)
         var fakeRenderer = new InvoiceRenderer() {
         public byte[] render(Invoice inv) { return "X".getBytes(); }
         };
@@ -40,6 +40,7 @@ public class App {
         public void notify(Message msg) {}
         };
 
+        //Injection der fake Implementierungen in InvoiceService
         var service = new InvoiceService(fakeRenderer, fakeNotifier);
         byte[] out = service.exportAndNotify(new Invoice("INV-1"), "a@b.c");
 
