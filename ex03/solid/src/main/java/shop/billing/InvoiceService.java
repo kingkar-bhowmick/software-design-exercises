@@ -1,10 +1,18 @@
 package shop.billing;
 
-import shop.billing.export.PdfRenderer;
-import shop.notification.MailNotifier;
-import shop.notification.Message;
+import shop.billing.export.*;
+import shop.billing.export.*;
+import shop.notification.*;
+import shop.notification.*;
 
 public class InvoiceService {
+
+
+    public InvoiceService(InvoiceRenderer r, Notifier n) {
+
+        
+    }
+
     public byte[] exportAndNotify(Invoice inv, String recipient) {
         PdfRenderer renderer = new PdfRenderer();
         MailNotifier notifier = new MailNotifier();

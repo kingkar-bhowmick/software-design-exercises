@@ -1,8 +1,10 @@
 package shop.checkout;
 
+//Formatierung des Kassenbons in eigene Klasse ausgelagert (SRP)
 
-class RecieptFormatter{
+public class RecieptFormatter{
 
+  //Methode zur Formatierung des Kassenbons
     public String summary(int subtotal, int discount, int tax, int total) {
  String reciept = "Subtotal: " + cents(subtotal) + ", " +
   "Discount: " + cents(discount) + ", " +

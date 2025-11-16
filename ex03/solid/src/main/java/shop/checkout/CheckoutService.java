@@ -6,9 +6,11 @@ import java.util.ArrayList;
 public class CheckoutService {
 
 
-    
+    //Eine Klasse eine Anderungsgründe haben (SRP)
+    //Deswegen ist alle funktion, in jeweilige Klasse ausgelagert.
     public String checkout(Cart cart) {
-         // Use the PriceCalculator to checkout the cart
+
+         //Preisberechnung in eigene Klasse ausgelagert
         PriceCalculator calculator = new PriceCalculator();
              
 

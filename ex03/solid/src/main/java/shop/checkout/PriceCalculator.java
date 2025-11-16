@@ -1,7 +1,9 @@
 package shop.checkout;
 
+//Preisberechnung in eigene Klasse ausgelagert (SRP)
  public class PriceCalculator{
 
+  //Methode zur Berechnung des Gesamtpreises
   public String calulate(Cart cart) {
   int subtotal = 0;
   for (CartItem it : cart.items()) {
@@ -16,8 +18,6 @@ package shop.checkout;
   
 
   return formatter.summary(subtotal,discount,tax,total);
-
-
 
 
 
