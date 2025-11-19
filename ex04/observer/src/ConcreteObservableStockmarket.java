@@ -1,21 +1,14 @@
 import java.util.*;
 
-//ConcreteObservable implementiert Observable
-public class ConcreteObservable implements Observable {
+// ConcreteObservableStockmarket implementiert Observable für das Aktienmarkt-Domain
+public class ConcreteObservableStockmarket implements Observable {
 
+    // Liste der registrierten Observer und ein Beispielzustand: price (double)
+    private List<Observer> observers;
+    private double price;
 
-    // TODO: private List<Observer> observers;
-    // TODO: Beispielzustand, z. B. private double temperature;
-
-    //Es wurde eine Liste von Observern erstellt und ein double für die Temperatur
-
-    private List <Observer> observers;
-     private double temperature;
-
-
-    //Konstruktor
-    public ConcreteObservable()
-    {
+    // Konstruktor
+    public ConcreteObservableStockmarket() {
         observers = new ArrayList<>();
     }
 
@@ -48,22 +41,22 @@ public class ConcreteObservable implements Observable {
         {
             //Benachrichtigung der Observer über Iteration von alle Observer in der Liste
             o.update();
+
+           
         }
     }
 
     // TODO: Getter/Setter für den Zustand (z. B. getTemperature/setTemperature)
 
-    //Getter für Temperatur
-    public double getTemperature()
-    {
-        return temperature;
+    // Getter für den Preis (Beispielzustand)
+    public double getPrice() {
+        return price;
     }
 
-    //Setter für Temperatur und Benachrichtigung der Observer bei Änderung
-    public void setTemperature(double d){
-
-        temperature = d; //Setzen der neuen Temperatur
-        notifyObservers(); //Benachrichtigung der Observer bei Änderung der Temperatur
+    // Setter für den Preis und Benachrichtigung der Observer bei Änderung
+    public void setPrice(double p) {
+        price = p; // Setzen des neuen Preises
+        notifyObservers(); // Benachrichtigung der Observer bei Änderung
     }
 
 }
