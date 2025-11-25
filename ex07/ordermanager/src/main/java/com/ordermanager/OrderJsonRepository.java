@@ -23,6 +23,8 @@ public class OrderJsonRepository {
      */
     public void writeOrder(Path file, Order order) throws IOException {
         // TODO: Order-Objekt in JSON konvertieren und in die Datei schreiben.
+         objectMapper.writeValue(file.toFile(), order);
+
     }
 
     /**
@@ -32,7 +34,9 @@ public class OrderJsonRepository {
      * @return eingelesenes Order-Objekt
      */
     public Order readOrder(Path file) throws IOException {
+
+        return objectMapper.readValue(file.toFile(), Order.class);
         // TODO: Dateiinhalt lesen und mit ObjectMapper in ein Order-Objekt umwandeln.
-        return null; // TODO: durch das eingelesene Objekt ersetzen
+      // TODO: durch das eingelesene Objekt ersetzen
     }
 }
