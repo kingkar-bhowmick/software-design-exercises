@@ -2,24 +2,24 @@ package com.customermanager;
 
 public class CustomerTO {
 
-    private int customerId;
+    private Integer customerId;
     private String firstName;
     private String lastName;
 
     public CustomerTO() {
     }
 
-    public CustomerTO(int customerId, String firstName, String lastName) {
+    public CustomerTO(Integer customerId, String firstName, String lastName) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public int getCustomerId() {
+    public Integer getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(int customerId) {
+    public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
 
