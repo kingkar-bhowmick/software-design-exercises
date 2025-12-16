@@ -32,7 +32,7 @@ public class SQLiteCustomerDAO implements CustomerDAO {
     }
 
     @Override
-    public CustomerTO getCustomer(int customerId) throws SQLException {
+    public CustomerTO getCustomer(Integer customerId) throws SQLException {
         String sql = "SELECT * FROM customers WHERE customer_id = ?";
 
         try (Connection connection = DriverManager.getConnection(DB_URL);
@@ -79,7 +79,7 @@ public class SQLiteCustomerDAO implements CustomerDAO {
     }
 
     @Override
-    public void deleteCustomer(int customerId) throws SQLException {
+    public void deleteCustomer(Integer customerId) throws SQLException {
         String sql = "DELETE FROM customers WHERE customer_id = ?";
 
         try (Connection connection = DriverManager.getConnection(DB_URL);

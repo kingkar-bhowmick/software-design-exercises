@@ -56,8 +56,11 @@ public class CustomerManager implements CommandLineRunner {
             waitForKey();
 
             // Delete example customer
-            repo.deleteById(c.getCustomerId());
-            System.out.println("Deleted customer with ID: " + c.getCustomerId());
+            Integer customerId = c.getCustomerId();
+            if (customerId != null) {
+                repo.deleteById(customerId);
+                System.out.println("Deleted customer with ID: " + customerId);
+            }
             printCustomerList();
             waitForKey();
         }
