@@ -20,6 +20,7 @@
 
     <HBox spacing="10" alignment="CENTER">
         <Button text="+1" onAction="#onIncrement" />
+        <Button text="-1" onAction="#onDecrement" />
         <Button text="Reset" onAction="#onReset" />
     </HBox>
 </VBox>

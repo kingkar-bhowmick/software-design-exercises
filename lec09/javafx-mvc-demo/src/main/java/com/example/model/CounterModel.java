@@ -9,7 +9,16 @@ public class CounterModel {
     }
 
     public void increment() {
-        value++;
+        for (int i = value; i < 10; i++) {
+            value++;
+        break; }
+    }
+
+    public void decrement() {
+        if (value > 0) {
+            value--;
+        }
+
     }
 
     public void reset() {

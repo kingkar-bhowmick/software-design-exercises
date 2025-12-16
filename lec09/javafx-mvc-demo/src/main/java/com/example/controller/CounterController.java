@@ -23,6 +23,11 @@ public class CounterController {
         model.increment();
         updateView();
     }
+    @FXML
+    private void onDecrement() {
+        model.decrement();
+        updateView();
+    }
 
     @FXML
     private void onReset() {
