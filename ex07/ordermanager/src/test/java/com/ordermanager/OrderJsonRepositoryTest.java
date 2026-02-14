@@ -30,5 +30,7 @@ class OrderJsonRepositoryTest {
         assertEquals(order.getCustomerName(), loaded.getCustomerName());
         assertEquals(order.getTotalAmount(), loaded.getTotalAmount());
         assertEquals(order.getDiscount(), loaded.getDiscount());
+
+        System.out.println(tempFile.toString());
     }
 }
